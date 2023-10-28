@@ -14,7 +14,7 @@
         text-indent: 40px;
       }
 
-      video {
+      iframe {
         display: block;
         margin-left: 40px;
       }
@@ -26,6 +26,16 @@
       p.comment {
         display: block;
         margin-left: 40px;
+        margin-right: 5%;
+      }
+
+      span.timer {
+        text-indent: 0px;
+      }
+
+      span.person {
+        display: inline-block;
+        margin-left: 7px;
       }
 
     </style>
@@ -51,18 +61,16 @@
         <span><b>Participant:</b></span>
         Speaker 2
       </p>
-      <video src="https://www.youtube.com/watch?v=tCDvOQI3pco" width=500px height=300px autoplay loop controls></video>
+      <iframe width="500" height="300" src="https://www.youtube.com/embed/tCDvOQI3pco" title="10 Second Timer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
     <br><br>
-    <div class="timer">
-      <span>00.05 <b> Speaker 1</b></span>
-    </div>
+    <span class="timer">0.05</span>
+    <span class="person"><b> Speaker 1</b></span>
     <p class="comment">
       How do you feel about the number of video calls you and your team are conducting?
     </p>
-    <div class="timer">
-      <span>00.05 <b> Speaker 2</b></span>
-    </div>
+    <span class="timer">0.05</span>
+    <span class="person"><b> Speaker 2</b></span>
     <p class="comment">
       The number of calls have grown exponentially since our team moved to a remote environment.I feel emotionally and physically drained by the number of calls I
     </p>
