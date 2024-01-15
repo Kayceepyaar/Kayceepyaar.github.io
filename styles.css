@@ -1,0 +1,174 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: fixed;
+    background-color: whitesmoke;
+    height: 95%;
+    width: 95%;
+}
+
+.chatbot {
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 60px;
+    width: 300px;
+    height: 60%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid black;
+}
+
+.message-header {
+    display: flex;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    background-color:blue;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.fa-thin {
+    color: white;
+    margin-left: 10px;
+}
+
+.fa-regular {
+    color: black;
+}
+
+.fa-paperclip {
+    color: black;
+    margin-right: 5px;
+}
+
+img {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    left: 10px;
+}
+
+.text {
+    margin-left: 20px;
+}
+
+h3 {
+    font-size: 15px;
+    margin: 0;
+    color: white;
+}
+
+h6 {
+    font-size: 9px;
+    margin: 5px;
+    color: white;
+}
+
+.chat-page {
+    background-color: white;
+    max-height: 75%;
+    overflow-y: auto;
+}
+
+.typing-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    background-color: azure;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+input {
+    width: 80%;
+    margin-left: 5px;
+    border: none;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: blue;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.arrows {
+    color: white;
+}
+
+.fa-chevron-up {
+    display: block;
+}
+
+.fa-chevron-down {
+    display: none;
+}
+
+.incoming-msgs {
+    background-color:lightgray;
+    margin-left: 10px;
+}
+
+.outgoing-msgs {
+    background-color: lightblue;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.msgs {
+    border-radius: 5px;
+    max-width: 75%;
+    width: max-content;
+}
+
+p {
+    margin: 10px;
+    font-size: 15px;
+}
+
+p.in {
+    color: black;
+}
+
+p.out {
+    color: white;
+    text-align: right;
+}
+
+@media only screen and (max-width:850px) {
+    img {
+        width: 28px;
+    }
+
+    .message-header {
+        height: 5%;
+    }
+
+    .incoming-msgs {
+        font-size: 18px;
+    }
+}
